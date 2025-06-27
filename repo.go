@@ -12,7 +12,7 @@ type InMemoryRepo struct {
 
 func NewInMemoryRepo() *InMemoryRepo {
 	return &InMemoryRepo{
-		users: []model.User{},
+		users: make([]model.User, 0),
 	}
 }
 
